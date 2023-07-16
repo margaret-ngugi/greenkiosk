@@ -4,5 +4,8 @@ from .models import Customer
 # Register your models here.
                                                                           
 class CustomerAdmin(admin.ModelAdmin):
-    list_display=("name","email","phone","address")
+    list_display=("name","email","phone","address","date_of_birth")
 admin.site.register(Customer,CustomerAdmin) 
+
+
+
